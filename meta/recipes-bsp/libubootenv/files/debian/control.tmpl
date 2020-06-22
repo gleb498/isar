@@ -1,0 +1,15 @@
+Source: libubootenv
+Section: embedded
+Priority: optional
+Maintainer: Stefano Babic <sbabic@denx.de>
+Build-Depends: ${BUILD_DEB_DEPENDS}
+Standards-Version: 4.2.1
+Homepage: https://sbabic.github.io/libubootenv
+
+Package: libubootenv
+Architecture: any
+Depends: ${DEBIAN_DEPENDS}
+Description: libubootenv is a library that provides a hardware independent
+ way to access to U-Boot environment. U-Boot has its default environment
+ compiled board-dependently and this means that tools to access the environment
+ are also board specific, too.
