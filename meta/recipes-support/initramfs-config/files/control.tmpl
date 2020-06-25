@@ -1,12 +1,12 @@
-Source: initramfs-config
+Source: ${PN}
 Section: misc
 Priority: optional
 Standards-Version: 3.9.6
-Maintainer: Unknown maintainer <unknown@example.com>
+Maintainer: isar-users <isar-users@googlegroups.com>
 Build-Depends: debhelper (>= 9)
 
 
-Package: initramfs-config
+Package: ${PN}
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, initramfs-tools-core, ${KERNEL_PACKAGE}
+Depends: ${shlibs:Depends}, ${misc:Depends}, initramfs-tools-core, ${DEBIAN_DEPENDS}
 Description: Configuration files for a custom initramfs
